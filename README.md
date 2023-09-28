@@ -36,7 +36,7 @@ Endpoint para obtener todos los contactos
 | 4   | Endpoint         | http://localhost:8000/contactos              |
 | 5   | Query Params     | ?limit=10&offset=10                         |
 | 6   | Path Param       | NA                                           |
-| 7   | Data             | NA                                           |
+| 7   | Data             | {"id_contacto": int, "nombre": string, "apellido_paterno": string, "apellido_materno": string, "email": string, "telefono": string}|
 | 8   | Version          | v1                                           |
 | 9   | Status Code      | 200                                          |
 | 10  | Response type    | application/json                             |
@@ -44,7 +44,7 @@ Endpoint para obtener todos los contactos
 | 12  | Curl             | curl -X "GET" "http://localhost:8000/contactos?limit=10&offset=10" -H "accept:application/json" |
 | 13  | Status Code (error) | 429                                          |
 | 14  | Response Type (error) | application/json                             |
-| 15  | Response (error) | {"message": "No hay registros"}              |
+| 15  | Response (error) | {"message": "No hay registros"}, {"message": "No ingrseso un dato valido"} |
 
 ## 4.2 Buscar contactos por nombre
 
@@ -58,7 +58,7 @@ Endpoint para obtener todos los contactos por nombre
 | 4   | Endpoint         | http://localhost:8000/contactos              |
 | 5   | Query Params     | ?limit=10&offset=10&nombre={nombre}         |
 | 6   | Path Param       | NA                                           |
-| 7   | Data             | NA                                           |
+| 7   | Data             | {"id_contacto": int, "nombre": string, "apellido_paterno": string, "apellido_materno": string, "email": string, "telefono": string}|
 | 8   | Version          | v1                                           |
 | 9   | Status Code      | 200                                          |
 | 10  | Response type    | application/json                             |
