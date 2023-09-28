@@ -22,7 +22,7 @@ Para este ejemplo se utilizará el gestor de base de datos [SQLite3](https://www
 
 CREATE TABLE IF NOT EXISTS contactos ( id_contacto INTEGER PRIMARY KEY, nombre VARCHAR(100) NOT NULL, primer_apellido VARCHAR(50) NOT NULL, segundo_apellido VARCHAR(50) NOT NULL, email VARCHAR(100) NOT NULL, telefono VARCHAR(13) NOT NULL );
 
-##4. Diseño del Endpoint
+## 4. Diseño del Endpoint
 
 ## 4.1 Mostrar todos los contactos
 
